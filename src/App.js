@@ -4,7 +4,6 @@ import {useSelector, useDispatch} from "react-redux";
 import {createTodo, fetchTodos, setTodo} from "./store/actions";
 import {setTodos} from "./store/actions";
 import {useEffect} from "react";
-import API from "./api/index"
 
 function App() {
     const todo = useSelector(state => state.todo)
