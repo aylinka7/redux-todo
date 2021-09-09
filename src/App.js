@@ -11,7 +11,7 @@ function App() {
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(fetchTodos())
-    }, [])
+    }, [dispatch])
     const submit = (e) => {
         e.preventDefault()
         dispatch(createTodo(todo, todos))
